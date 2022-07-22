@@ -31,3 +31,72 @@ body {
     line-height: 48px;
     color: #0d3351;
 }
+
+/* HEADER */
+
+.hero-image {
+    /* background: no-repeat url(../img/header-bg.jpg) bottom center / cover; */
+}
+
+.header__inner {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu {
+    margin-right: auto;
+}
+
+.header__menu-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.header__menu-item-link {
+    text-decoration: none;
+    color: #0d3351;
+}
+
+.header__pannel {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 35px;
+    gap: 40px;
+}
+
+.header__pannel-profile,
+.header__pannel-currency,
+.header__pannel-lang {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #0d3351 ;
+    border: none;
+    background: none;
+}
+
+.header__pannel-profile {
+    margin-left: 18px;
+}
+.header__pannel-currency {
+    margin-left: 18px;
+}
+.header__pannel-lang {
+}
+
+.header__phone {
+    font-weight: 700;
+    text-decoration: none;
+    color: #0d3351;
+    line-height: 14px;
+}
+
+.header__phone span {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* PROMO */
+
