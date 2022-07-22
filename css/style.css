@@ -26,16 +26,26 @@ body {
 
 .title {
     font-family: 'Roboto Slab', serif;
+    text-align: center;
     font-weight: 400;
     font-size: 36px;
     line-height: 48px;
     color: #0d3351;
 }
 
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 17px 50px;
+    background-color: #33c7fd;
+}
+
 /* HEADER */
 
 .hero-image {
     /* background: no-repeat url(../img/header-bg.jpg) bottom center / cover; */
+    margin-bottom: 120px;
 }
 
 .header__inner {
@@ -100,3 +110,35 @@ body {
 
 /* PROMO */
 
+.promo {
+    text-align: center;
+}
+
+.promo__logo {
+    margin-bottom: 20px;
+}
+
+.promo__title {
+    margin-bottom: 60px;
+}
+
+.promo__main-title {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 58px;
+    line-height: 100px;
+}
+
+.promo__btn {
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.promo__btn::after {
+    position: absolute;
+    content: url(../img/promo-decor.png);
+    left: 30%;
+    top: 80px;
+}
