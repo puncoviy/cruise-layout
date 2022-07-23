@@ -48,15 +48,25 @@
                         </ul>
                     </nav>
                     <div class="header__pannel">
-                        <select class="header__pannel-profile" name="profile" id="profile">
-                            <option value="personal-profile">Личный кабинет</option>
-                        </select>
-                        <select class="header__pannel-currency" name="currency" id="currency">
-                            <option value="rubble">Рубль</option>
-                            <option value="dollar">Доллар</option>
-                            <option value="euro">Евро</option>
-                        </select>
-                        <select class="header__pannel-lang" name="lang" id="lang">
+                        <div class="header__pannel-profile">
+                            <svg class="icon icon-profile">
+                                <use xlink:href="./img/svg/sprite.svg#user-profile-avatar-svgrepo-com"></use>
+                            </svg>
+                            <select class="header__pannel-profile-option" name="profile" id="profile">
+                                <option value="personal-profile">Личный кабинет</option>
+                            </select>
+                        </div>
+                        <div class="header__pannel-currency">
+                            <svg class="icon icon-rubble">
+                                <use xlink:href="./img/svg/sprite.svg#ruble-sign-svgrepo-com"></use>
+                            </svg>
+                            <select class="header__pannel-currency-option" name="currency" id="currency">
+                                <option value="rubble">Рубль</option>
+                                <option value="dollar">Доллар</option>
+                                <option value="euro">Евро</option>
+                            </select>
+                        </div>
+                        <select class="header__pannel-lang-option" name="lang" id="lang">
                             <option value="russian">Ru</option>
                             <option value="english">En</option>
                         </select>
@@ -73,6 +83,89 @@
                 <a class="promo__btn btn" href="#">Выбрать круиз</a>
             </div>
         </section>
+    </section>
+    <section class="catalogue">
+        <div class="container">
+            <h2 class="catalogue__title title">Каталог круизов</h2>
+            <ul class="catalogue__list">
+                <li class="catalogue__item">
+                    <img class="catalogue__item-img" src="./img/cat1.jpg" alt="Анапа">
+                    <div class="catalogue__item-box">
+                        <h3 class="catalogue__item-title">Морской круиз в Анапу</h3>
+                        <dl class="catalogue__item-info">
+                            <dt class="catalogue__item-info-title">Маршрут:</dt>
+                            <dd class="catalogue__item-info-text">Сочи-Лазаревское-Геленджик-Анапа</dd>
+                        </dl>
+                        <dl class="catalogue__item-info">
+                            <dt class="catalogue__item-info-title">Продолжительность:</dt>
+                            <dd class="catalogue__item-info-text">10 ч. 0 мин.</dd>
+                        </dl>
+                        <p class="catalogue__item-price">49 000 руб.</p>
+                    </div>
+                </li>
+                <li class="catalogue__item">
+                    <img class="catalogue__item-img" src="./img/cat2.jpg" alt="Новороссийск">
+                    <div class="catalogue__item-box">
+                        <h3 class="catalogue__item-title">Морской круиз в Новороссийск</h3>
+                        <dl class="catalogue__item-info">
+                            <dt class="catalogue__item-info-title">Маршрут:</dt>
+                            <dd class="catalogue__item-info-text">Сочи-Геленджик-Новороссийск-Геленджик-Сочи</dd>
+                        </dl>
+                        <dl class="catalogue__item-info">
+                            <dt class="catalogue__item-info-title">Продолжительность:</dt>
+                            <dd class="catalogue__item-info-text">13 ч. 0 мин.</dd>
+                        </dl>
+                        <p class="catalogue__item-price">14 800 руб.</p>
+                    </div>
+                </li>
+                <li class="catalogue__item">
+                    <img class="catalogue__item-img" src="./img/cat3.jpg" alt="Адлер">
+                    <div class="catalogue__item-box">
+                        <h3 class="catalogue__item-title">Обзорная морская прогулка с экскурсией</h3>
+                        <dl class="catalogue__item-info">
+                            <dt class="catalogue__item-info-title">Маршрут:</dt>
+                            <dd class="catalogue__item-info-text">Сочи-Адлер-Сочи (без высадки)</dd>
+                        </dl>
+                        <dl class="catalogue__item-info">
+                            <dt class="catalogue__item-info-title">Продолжительность:</dt>
+                            <dd class="catalogue__item-info-text">1 ч. 0 мин.</dd>
+                        </dl>
+                        <p class="catalogue__item-price new-price">5 000 руб.</p>
+                    </div>
+                </li>
+                <li class="catalogue__item">
+                    <img class="catalogue__item-img" src="./img/cat4.jpg" alt="Геленджик">
+                    <div class="catalogue__item-box">
+                        <h3 class="catalogue__item-title">Морская прогулка в Геленджик</h3>
+                        <dl class="catalogue__item-info">
+                            <dt class="catalogue__item-info-title">Маршрут:</dt>
+                            <dd class="catalogue__item-info-text">Сочи-Туапсе-Геленджик</dd>
+                        </dl>
+                        <dl class="catalogue__item-info">
+                            <dt class="catalogue__item-info-title">Продолжительность:</dt>
+                            <dd class="catalogue__item-info-text">12 ч. 30 мин.</dd>
+                        </dl>
+                        <p class="catalogue__item-price">7 000 руб.</p>
+                    </div>
+                </li>
+                <li class="catalogue__item">
+                    <img class="catalogue__item-img" src="./img/cat5.jpg" alt="Абрау-Дюрсо">
+                    <div class="catalogue__item-box">
+                        <h3 class="catalogue__item-title">Морская прогулка в Абрау-Дюрсо</h3>
+                        <dl class="catalogue__item-info">
+                            <dt class="catalogue__item-info-title">Маршрут:</dt>
+                            <dd class="catalogue__item-info-text">Сочи-Абрау-Дюрсо</dd>
+                        </dl>
+                        <dl class="catalogue__item-info">
+                            <dt class="catalogue__item-info-title">Продолжительность:</dt>
+                            <dd class="catalogue__item-info-text">11 ч. 0 мин.</dd>
+                        </dl>
+                        <p class="catalogue__item-price">14 800 руб.</p>
+                    </div>
+                </li>
+            </ul>
+            <a class="catalogue__btn btn" href="#">Больше круизов</a>
+        </div>
     </section>
 </body>
 </html>

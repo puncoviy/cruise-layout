@@ -5,11 +5,12 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: #0d3351;
+    background-color: #f3f3f3;
 }
 
 .container {
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 0 30px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -44,7 +45,7 @@ body {
 /* HEADER */
 
 .hero-image {
-    /* background: no-repeat url(../img/header-bg.jpg) bottom center / cover; */
+    background: no-repeat url(../img/header-bg.jpg) bottom center / cover;
     margin-bottom: 120px;
 }
 
@@ -70,29 +71,28 @@ body {
 }
 
 .header__pannel {
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin-right: 35px;
     gap: 40px;
 }
 
-.header__pannel-profile,
-.header__pannel-currency,
-.header__pannel-lang {
+.icon {
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    fill: #33c7fd;
+}
+
+.header__pannel-profile-option,
+.header__pannel-currency-option,
+.header__pannel-lang-option {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     color: #0d3351 ;
     border: none;
     background: none;
-}
-
-.header__pannel-profile {
-    margin-left: 18px;
-}
-.header__pannel-currency {
-    margin-left: 18px;
-}
-.header__pannel-lang {
 }
 
 .header__phone {
@@ -141,4 +141,91 @@ body {
     content: url(../img/promo-decor.png);
     left: 30%;
     top: 80px;
+}
+
+/* CATALOGUE */
+
+.catalogue {
+    margin-bottom: 90px;
+}
+
+.catalogue__title {
+    margin-bottom: 75px;
+}
+
+.catalogue__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-height: 1090px;
+    margin-bottom: 25px;
+}
+.catalogue__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 555px;
+}
+
+.catalogue__item-box {
+    padding: 20px 40px 30px;
+    background-color: #fff;
+}
+
+.catalogue__item-title {
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    line-height: normal;
+    color: #33c7fd;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.catalogue__item-title::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 5px solid transparent;
+    border-left: 5px solid #33c7fd;
+    top: 40%;
+    right: -20px;
+}
+
+.catalogue__item .catalogue__item-info:last-of-type {
+    margin-bottom: 10px;
+}
+
+.catalogue__item-info-title {
+    font-weight: 700;
+    display: inline-block;
+}
+
+.catalogue__item-info-text {
+    display: inline-block;
+}
+
+.catalogue__item-price {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    line-height: normal;
+}
+
+.new-price::after {
+    padding-left: 30px;
+    content: '15000 руб.';
+    text-decoration: line-through;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.catalogue__btn {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
