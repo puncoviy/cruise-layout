@@ -229,3 +229,28 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* GALLERY */
+
+.gallery {
+    margin-bottom: 80px;
+}
+
+.gallery__title {
+    margin-bottom: 40px;
+}
+
+.gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__img {
+    width: 285px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.gallery__img:nth-child(5n+1) {
+    width: 570px;
+}
