@@ -254,3 +254,57 @@ body {
 .gallery__img:nth-child(5n+1) {
     width: 570px;
 }
+
+/* REVIEWS */
+
+.reviews {
+    margin-bottom: 60px;
+}
+
+.reviews__title {
+    margin-bottom: 40px;
+}
+
+.reviews__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.reviews__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+}
+
+.reviews__item-img {
+    width: 360px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.reviews__item-info {
+    flex-grow: 1;
+    padding: 30px 40px 60px;
+    background-color: #fff;
+}
+
+.reviews__item-info-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #00a2dd;
+    margin-bottom: 18px;
+}
+
+.reviews__item-info-cruise {
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+
+.gallery__btn {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
