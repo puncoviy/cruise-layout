@@ -137,11 +137,23 @@ body {
     margin-bottom: 120px;
 }
 
+@keyframes dashes {
+    0% { height: 0; opacity: 0; }
+    49% { height: 0; opacity: 0; }
+    50% { height: 0; opacity: 1; }
+    100% { height: 274px; }
+}
+
 .hero-image::after {
     position: absolute;
-    content: url(../img/promo-decor.png);
+    content: '';
+    width: 60px;
+    height: 274px;
+    background-image: url(../img/promo-decor.png);
+    background-repeat: no-repeat;
     left: 47%;
-    bottom: -118px;
+    top: 81%;
+    animation: dashes 5s linear;
 }
 
 .header__inner {
@@ -475,6 +487,16 @@ body {
     }
 }
 
+@media (max-width: 850px) {
+    .title {
+        font-size: 30px;
+    }
+    .promo__main-title {
+        font-size: 70px;
+        line-height: 70px;
+    }
+}
+
 @media (max-width: 595px) {
     .header__menu {
         flex-basis: unset;
@@ -537,5 +559,15 @@ body {
         opacity: 1;
         z-index: 1;
         top: 95px;
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 24px;
+    }
+    .promo__main-title {
+        font-size: 50px;
+        line-height: 50px;
     }
 }
